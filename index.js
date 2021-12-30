@@ -4,9 +4,9 @@ const app = require('./src/app');
 BD.connect();
 
 async function main() {
-    await app.listen(CONFIG.PORT, function(error) {
+    await app.listen(CONFIG.PORT, function (error) {
         if (error) return console.log(error);
-        console.log(`Corriendo en el puerto [: ${CONFIG.PORT} ]`);
+        console.log(`Corriendo en el puerto: [${CONFIG.PORT}]`);
     });
 }
 
